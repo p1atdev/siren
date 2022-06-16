@@ -15,7 +15,7 @@ Import
 ```ts
 // deps.ts
 
-export * as siren from "https://deno.land/x/siren@v0.1.0/mod.ts"
+export * as siren from "https://deno.land/x/siren@v0.1.0/mod.ts";
 ```
 
 Then,
@@ -23,11 +23,11 @@ Then,
 ```ts
 // main.ts
 
-import { getSong } from "./deps.ts"
+import { getSong } from "./deps.ts";
 
-const song = await getSong("880378")
+const song = await getSong("880378");
 
-console.log(song.title) // "Operation Blade"
+console.log(song.title); // "Operation Blade"
 
-console.log(song.sourceUrl) // https://res01.hycdn.cn/*[random]*/*.mp3
+console.log(song.sourceUrl); // https://res01.hycdn.cn/*[random]*/*.mp3
 ```

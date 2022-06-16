@@ -3,5 +3,15 @@
     "test": "deno test --allow-net --allow-env",
     "test:cov": "deno test -A --coverage=coverage && deno coverage ./coverage --lcov --output=coverage.lcov",
     "cache": "deno cache ./deps.ts"
+  },
+  "fmt": {
+    "files": {
+      "exclude": ["*.md"]
+    }
+  },
+  "lint": {
+    "files": {
+      "exclude": ["*.md"]
+    }
   }
 }
