@@ -1,30 +1,33 @@
-# Deno template project
+# Siren - Arknights OST Downloader in CLI -
 
 ![Deno JS](https://img.shields.io/badge/deno%20js-000000?style=for-the-badge&logo=deno&logoColor=white)
 [![vr scripts](https://badges.velociraptor.run/flat.svg)](https://velociraptor.run)
+![Test](https://github.com/p1atdev/siren/actions/workflows/test.yml/badge.svg)
 
-# Features
+## Installation
 
-- VSCode extension setup for Deno
-- [Velociraptor](https://velociraptor.run/)
-- [Dockerfile](https://hub.docker.com/r/denoland/deno)
+TODO
 
-# Usage
+## Use as a library
 
-## GitHub Template
+Import
 
-[Create a repo from this template](https://github.com/p1atdev/deno_template/generate)
+```ts
+// deps.ts
 
-## Clone
-
-```bash
-git clone https://github.com/p1atdev/deno_template my_deno_project
+export * as siren from "https://deno.land/x/siren@v0.1.0/mod.ts"
 ```
 
-## Badges
+Then,
 
-- Test workflow
+```ts
+// main.ts
 
-```md
-![Test](https://github.com/[your_name]/[your_repo_name]/actions/workflows/test.yml/badge.svg)
+import { getSong } from "./deps.ts"
+
+const song = await getSong("880378")
+
+console.log(song.title) // "Operation Blade"
+
+console.log(song.sourceUrl) // https://res01.hycdn.cn/*[random]*/*.mp3
 ```
